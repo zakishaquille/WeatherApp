@@ -1,7 +1,9 @@
 # Weather Web using ReasonML
 Simple web with integration to OpenWeatherMap API. Developed with ReasonML, ReasonReact, BuckleScript, etc.
 
-[App's screenshot is available here](https://github.com/zakishaquille/WeatherWebApp/blob/main/Screen%20Shot.png)
+[App screenshot is available here](https://github.com/zakishaquille/WeatherWebApp/blob/main/Screen%20Shot.png)
+
+Thanks to [Weather App in ReasonML and React](https://youtu.be/H6X6AJZna98)
 
 ## Run
 
