@@ -7,7 +7,7 @@
 // time through the examples later.
 let style = document##createElement("style");
 document##head##appendChild(style);
-style##innerHTML #= ExampleStyles.style;
+style##innerHTML #= Styles.style;
 
 let makeContainer = text => {
   let container = document##createElement("div");
@@ -18,7 +18,6 @@ let makeContainer = text => {
   title##innerText #= text;
 
   let content = document##createElement("div");
-  content##className #= "containerContent";
 
   let () = container##appendChild(title);
   let () = container##appendChild(content);
@@ -27,25 +26,7 @@ let makeContainer = text => {
   content;
 };
 
-// All 4 examples.
-// ReactDOMRe.render(
-//   <BlinkingGreeting>
-//     {React.string("Hello!")}
-//   </BlinkingGreeting>,
-//   makeContainer("Blinking Greeting"),
-// );
-
-// ReactDOMRe.render(
-//   <ReducerFromReactJSDocs />,
-//   makeContainer("Reducer From ReactJS Docs"),
-// );
-
-// ReactDOMRe.render(
-//   <FetchedDogPictures />,
-//   makeContainer("Fetched Dog Pictures"),
-// );
-
 ReactDOMRe.render(
   <App />,
-  makeContainer("App"),
+  makeContainer("Weather App"),
 );

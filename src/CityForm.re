@@ -9,7 +9,7 @@ let make = (~onCity) => {
         Api.City(value) |> onCity;
     };
 
-    <form onSubmit>
+    <form onSubmit className="city-form">
         <input
             type_="text"
             placeholder="Enter city"

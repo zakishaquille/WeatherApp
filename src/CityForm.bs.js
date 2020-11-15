@@ -17,6 +17,7 @@ function CityForm(Props) {
     return Curry._1(onCity, /* City */Block.__(0, [value]));
   };
   return React.createElement("form", {
+              className: "city-form",
               onSubmit: onSubmit
             }, React.createElement("input", {
                   placeholder: "Enter city",

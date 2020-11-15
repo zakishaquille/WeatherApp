@@ -3,13 +3,13 @@
 var React = require("react");
 var ReactDom = require("react-dom");
 var App$CityWeather = require("./App.bs.js");
-var ExampleStyles$CityWeather = require("./ExampleStyles.bs.js");
+var Styles$CityWeather = require("./Styles.bs.js");
 
 var style = document.createElement("style");
 
 document.head.appendChild(style);
 
-style.innerHTML = ExampleStyles$CityWeather.style;
+style.innerHTML = Styles$CityWeather.style;
 
 function makeContainer(text) {
   var container = document.createElement("div");
@@ -18,14 +18,13 @@ function makeContainer(text) {
   title.className = "containerTitle";
   title.innerText = text;
   var content = document.createElement("div");
-  content.className = "containerContent";
   container.appendChild(title);
   container.appendChild(content);
   document.body.appendChild(container);
   return content;
 }
 
-ReactDom.render(React.createElement(App$CityWeather.make, { }), makeContainer("App"));
+ReactDom.render(React.createElement(App$CityWeather.make, { }), makeContainer("Weather App"));
 
 exports.style = style;
 exports.makeContainer = makeContainer;
