@@ -3,7 +3,7 @@
 var Block = require("bs-platform/lib/js/block.js");
 var Curry = require("bs-platform/lib/js/curry.js");
 var React = require("react");
-var Utils$CityWeather = require("./Utils.bs.js");
+var Utils$CityWeather = require("../Utils.bs.js");
 
 function CityForm(Props) {
   var onCity = Props.onCity;

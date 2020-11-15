@@ -2,7 +2,7 @@
 
 var Curry = require("bs-platform/lib/js/curry.js");
 var React = require("react");
-var Utils$CityWeather = require("./Utils.bs.js");
+var Utils$CityWeather = require("../Utils.bs.js");
 
 function Weather(Props) {
   var data = Props.data;

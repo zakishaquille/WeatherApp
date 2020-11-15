@@ -6,8 +6,8 @@ var React = require("react");
 var Api$CityWeather = require("./Api.bs.js");
 var Geo$CityWeather = require("./Geo.bs.js");
 var Utils$CityWeather = require("./Utils.bs.js");
-var Weather$CityWeather = require("./Weather.bs.js");
-var CityForm$CityWeather = require("./CityForm.bs.js");
+var Weather$CityWeather = require("./components/Weather.bs.js");
+var CityForm$CityWeather = require("./components/CityForm.bs.js");
 
 function App(Props) {
   var match = React.useState((function () {
